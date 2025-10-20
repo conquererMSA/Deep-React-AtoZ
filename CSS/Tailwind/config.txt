@@ -1,0 +1,4 @@
+1. initiate a React project by Vite@latest
+2.Add Node_Modules folder by npm i or yarn
+3. Go to tailwind documentation and follow the instruction
+   Remember: tailwind.config.js file ltest version e lagbe na, index.css e tailwind.css() import kore kaj korte hobe.
