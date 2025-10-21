@@ -2,9 +2,11 @@
 2.Add Node_Modules folder by npm i or yarn
 3. Go to tailwind documentation and follow the instruction
    Remember: tailwind.config.js file ltest version e lagbe na, index.css e tailwind.css() import kore kaj korte hobe.
+4. Tailwind customization (55-1:7:00): fontFamily, colors, spacing, screens
 
 Must following Documentation section:
-Theme variant,Customization on (vid duration 55:00-1:10:00), Layout: flex and grid,Opacity, Background, Responsive Design, 
+Theme variant,Customization on (vid duration 55:00-1:7:00), Official Plugins, (Directives @layer, @apply, @tailwind etc 1:7:00-1:15:00), Layout: flex and grid,Opacity, Background, Responsive Design, 
 
 Tailwind css utility classes:
 gradient niye kaj korle gradiet er ekta direction dite hoy. zemon r to l, t to b etc.
+@layer directive diye ekta custom component create kora zete pare.
