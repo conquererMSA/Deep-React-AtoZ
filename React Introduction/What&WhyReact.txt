@@ -1,0 +1,6 @@
+ReactJS is combined with React and ReactDOM.
+
+*React: is a JS library that helped us to make User Interface with JS. React handle everything via JSX, actually we write JSX code of JS.
+React structured UI and manage state and it's interact behaviour. React work in Virtual DOM. React provides hooks, method, state and works with application state and logic. React control applications side effects, components initialization and updates. React likes a chefs or cooker.
+
+*ReactDOM: is work like a waiter, and work with given data of React. ReactDOM creates the actual DOM in browsers. It decides what will render in browser and which structure will unmounting. Event handler is handled/mantain by the ReactDOM before gone to the bussiness logic(React manage the bussiness logic)
