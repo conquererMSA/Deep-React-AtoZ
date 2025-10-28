@@ -1,0 +1,5 @@
+React e HTML tags functional kintu DOM e dump hisabe thake.
+Every React application begins at "root" component and injects needed component/jsvascript function on it.
+React component hocce ekta JavaScript function zekhane HTML, CSS soho bivinno dhoroner markup choriye chitiye thake.
+React amader HTML markup, CSS, and JavaScript code ekta single file e combine korar suzug dey. Sei file ke custome "Component" bole. Component hocce ekta React application er building block and UI element. Component re-usable.
+React component is reusable.
