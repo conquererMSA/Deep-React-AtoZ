@@ -1,0 +1,3 @@
+How to pass data in component? with props.
+In React JSX everything is props including JXS HTML markup-tags-attributes, JS variable, CSS and Components. React component talk each other by props.
+Props are not static, it is change over the time. But props are immutable, you can't mutate the props. Suppose there have a props name person={nema:"", age:""}, you shoudn't change the person props by human={name:person.name,age:person.age}. React change the props reference immutable in memmory management and create a different reference for new props.
