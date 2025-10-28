@@ -1,0 +1,2 @@
+JSX is a syntex extension of JavaScript and React markup. JSX let us combine HTML Tags, CSS styles and JavaScript logic in a single file.
+JSX component file e curly braces er maddhyome amra dynamic JavaScript value ba variable niye kaj korte pari. Tobe {} diye dynamic HTML tags replace korte parina zemon <h1> er zaygay dynamic vabe <p> bosate parbo na.
