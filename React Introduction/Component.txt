@@ -3,3 +3,10 @@ Every React application begins at "root" component and injects needed component/
 React component hocce ekta JavaScript function zekhane HTML, CSS soho bivinno dhoroner markup choriye chitiye thake.
 React amader HTML markup, CSS, and JavaScript code ekta single file e combine korar suzug dey. Sei file ke custome "Component" bole. Component hocce ekta React application er building block and UI element. Component re-usable.
 React component is reusable.
+
+Keeping Components Pure: Single Responsibility Priciple
+Pure function only perform a caluculation and nothing more, and return it's own JSX.
+Local mutation kora zabe, kintu global mutation kora zabe na.
+Pure Component/function same props er jonno same JSX return korbe.
+Pure component shudhumatro nijer kaj kore.
+Same input er jonno same output pawya zay.
