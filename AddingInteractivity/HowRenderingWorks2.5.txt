@@ -1,0 +1,4 @@
+How React Rendering works depends on state change?
+Rendering process:Triggering->Rendering->Commiting to DOM
+React state change howar sathe renders trigger hoy. Zodi render er ager obosta ebong porer obostar moddhye difference thake tobei dom nodes e poriborton ase, change na hole actual DOM e kuno operation hoyna. Tobe virtual DOM e sob kichu notun kore calculation and render hoy.
+Dui dhoroner rendering hoy. Initial Render: application ab component initially load hoy, initial render automatic ghote. and Subsequent render: user er interactivity te zodi state er data change hoy tahole ei render ghote. Onekgulu subsequent render, render queue te joma thake.
