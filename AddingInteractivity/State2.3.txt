@@ -1,0 +1,3 @@
+State mane obosta: application er ze data interactity and logic onuzaye overtime change hobe sei data hocce application er state.
+Local variable change dont triggers render.
+State ba component data update er jonno React ke interactivity er age obosta ebong upcoming obsta compare korte hoy. Interactivity er ager ebong porer state ba obosta change hole render triggered hoy. Kintu local variable er change React mone rakhe na.
