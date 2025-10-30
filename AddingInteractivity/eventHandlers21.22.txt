@@ -8,3 +8,22 @@ function Button({props,children}) {
    return <button onClick={props.onClick}>{children}</button>
    button JSX element e "Upload Image" text children hisabe show hobe.
 }
+Pass Event Handler as a Props Module-2.1(10-22)minitue
+
+Event Propagation 2.2: Bivinno direction e event colacol kora.
+Event Bubble, Deligation and Capturing mile event propagation create kore.
+Shudhumatro onScroll event propagate hoyna. onno sob event propagate hoy.
+
+function Button({onSmash,children}){
+    return <button 
+    onClick={
+        (e)=>{ e.stopPropagation(),
+               onSmash
+        //ekhane button e event handler onClick e onSmash er reference deya zeto. Kintu er sathe event e er propagation stop korte hobe, tai ekti anonymous function likhe ekadik kaj/function ke wrap kore deya zay.
+              
+        }
+    }
+        > {children} </button>
+}
+Event handlers don't need to be pure, we should mange application/component side effects in event handler's function.
+
