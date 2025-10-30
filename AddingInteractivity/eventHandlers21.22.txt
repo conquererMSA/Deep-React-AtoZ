@@ -1,0 +1,3 @@
+Event handler application er nijosso ekta function zeta user interactivity te triggered hoy ebong state change korte pare.
+Event handler gulu props hisabe JSX element gulute patathe hoy.
+Event handler component er props er access pay and props hisabe onno ekta component e handler patanu zay.
