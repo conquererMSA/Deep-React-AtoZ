@@ -1,0 +1,9 @@
+React "Batch Updates" er maddhome multiple state update handle kore. Batch updates gulu ekta queue te thake.
+Ekta event handler er moddhye updater function diye "Batch Update" kora zay. Updater function inplaced React variable ke change korte pare. Updater function latest value ke parameter hisabe pay and inplaced state update kore. Updater function must be pure, don't call API or manage any side effects on it.
+**After the event handler completes, React will trigger a re-render. During the re-render, React will process the queue. Updater functions run during rendering, so updater functions must be pure and only return the result. Don’t try to set state from inside of them or run other side effects
+<button onClick={()=>{
+    setNumber(n=>n+1) 
+    setNumber(n=>n+1)
+    setNumber(n=>n+1)
+    //ekhane setNumber e arekta function call kora hoyeche, zei function n er previuos value ke nijer moddhye store korche ebong poroborti updater function e n er new value send kore.
+}}>+3</button>
