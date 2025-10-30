@@ -1,3 +1,10 @@
 Event handler application er nijosso ekta function zeta user interactivity te triggered hoy ebong state change korte pare.
 Event handler gulu props hisabe JSX element gulute patathe hoy.
 Event handler component er props er access pay and props hisabe onno ekta component e handler patanu zay.
+<Button onClick={() => alert('Uploading!')}>
+      Upload Image
+</Button>, ekhane onClick ekta event handler tobe Button component e props hisabe pathanu hoyeche.
+function Button({props,children}) {
+   return <button onClick={props.onClick}>{children}</button>
+   button JSX element e "Upload Image" text children hisabe show hobe.
+}
