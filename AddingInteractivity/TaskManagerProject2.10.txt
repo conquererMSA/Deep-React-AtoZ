@@ -1,0 +1,1 @@
+Lifting State Up: Application er feature develop and complexity avoid korte application er kuno ekta state ke parent component e declare kora hoy. Parent component theke logic onuzaye nirdhisto data props drilling kore proujonio component e pathanu hoy. Kintu ekhane zodi TaskList component e State declare kora hoto tahole SearchTaskList e sei state ba data pathanu zeto na.
