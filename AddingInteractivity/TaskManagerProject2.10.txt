@@ -1,1 +1,5 @@
-Lifting State Up: Application er feature develop and complexity avoid korte application er kuno ekta state ke parent component e declare kora hoy. Parent component theke logic onuzaye nirdhisto data props drilling kore proujonio component e pathanu hoy. Kintu ekhane zodi TaskList component e State declare kora hoto tahole SearchTaskList e sei state ba data pathanu zeto na.
+Lifting State Up: Application er feature develop and complexity avoid korte application er kuno ekta state ke parent component e declare kora hoy. Parent component theke logic onuzaye nirdhisto data props drilling kore proujonio component e pathanu hoy. Kintu ekhane zodi TaskList component e State declare kora hoto tahole SearchTaskList e sei state ba data pathanu zeto na. Lifting State Up e ekadik and onek somoy oprozonio component o re-render hoy.
+Kuno Modal component er z index and position rakhte hoy.
+Application er faeture onuzaye Ekoi component e Edit and Create handle korar jonno mode, edit data, and create data maintain korar jonno extra state declare kora zay.
+UseSatate hook e initial state set korar jonno logical &&, ||,?,?? use kora zay.
+const [task, setTask]=useState(taskToUpdate||{name:"",id:"", etc})
