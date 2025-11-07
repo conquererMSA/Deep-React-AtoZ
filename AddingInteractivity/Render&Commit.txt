@@ -1,0 +1,9 @@
+How JSX code executes and behave by state changes?
+Before a componnent displayed on screen they must be rendered by React.
+Ekta component and er attributes JSX code display hote 3 ti step follow kore.
+1. Trigger ( user er interactivity er porer obosta )
+2. Rendering: Recursive process ( find out the difference between two state changes and React call a component to figuare out what to display on screen )
+3. Commit:React final kore ze DOM e ki ki poriborton asbe (  Rendering e JSX modify hoy and modified JSX(updated component) actual DOM e display hoy )
+React changes the DOM nodes if there is a difference between renders.
+
+Epilogue: Zokhon rendering shesh hoy and DOM update hoy zay, updated components JSX element paint hoy ebong shesh web page e dekhte pai.
