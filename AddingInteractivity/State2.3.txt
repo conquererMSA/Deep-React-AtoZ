@@ -1,12 +1,19 @@
+**User ager render krito UI er event handler e click kore, click er sathe sathe inplaced state updaye hoye zayna. User er clicker jonno ze state update hoy ta porer render e pawya zay.**
+
 State mane obosta: application er ze data user interactivity and logic onuzaye overtime change hobe sei data hocce application er state.
 Local variable change dont triggers render. React variable, local variable er moto inplaced change hoyna. State variable never changes within the render (module 2.6,state snapshot). Event Handler er vitor state change hoy na.
 Ekta event handler e user interact korle nicher kaj gulu ghote:
 1. Event handler executes hoy.
-2. Event handler related state gulu setFunc diye set hobe.
+2. Event handler related state gulu setFunc diye set hobe ebong ekta re-render ke queue te rakhbe.
 3. setFunc er set kora new value onuzaye ekta re-render trigger hobe.
 User interactivity te state change houk ba nahouk re-render trigger hoy.
 State ba component data update er jonno React ke interactivity er age obosta ebong upcoming obsta compare korte hoy. Interactivity er ager ebong porer state ba obosta change hole render triggered hoy. Kintu local variable er change React mone rakhe na.
 State is private and isolated. Ekta component er state onno arekta ba same component er state er sathe conflict hoyna.
 **React Hooks are only available in rendering.
+
+Here is what happens when React re-renders a component:
+1. React component/function abar call hoy.
+2. React compnent/function notun JSX return kore.
+3. React updates the screen on display according to the new state.
 
 
