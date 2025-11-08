@@ -1,5 +1,7 @@
 **User ager render krito UI er event handler e click kore, click er sathe sathe inplaced state updaye hoye zayna. User er clicker jonno ze state update hoy ta porer render e pawya zay.**
 
+**Render means return of new UI according to the new passes param/arguament to the component function**
+
 How JSX code executes and behave by state changes?
 Before a componnent displayed on screen they must be rendered by React.
 

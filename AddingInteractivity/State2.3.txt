@@ -1,5 +1,7 @@
 **User ager render krito UI er event handler e click kore, click er sathe sathe inplaced state updaye hoye zayna. User er clicker jonno ze state update hoy ta porer render e pawya zay.**
 
+**Render means return of new UI according to the new passes param/arguament to the component function**
+
 State mane obosta: application er ze data user interactivity and logic onuzaye overtime change hobe sei data hocce application er state.
 Local variable change dont triggers render. React variable, local variable er moto inplaced change hoyna. State variable never changes within the render (module 2.6,state snapshot). Event Handler er vitor state change hoy na.
 Ekta event handler e user interact korle nicher kaj gulu ghote:
