@@ -1,7 +1,8 @@
 How JSX code executes and behave by state changes?
 Before a componnent displayed on screen they must be rendered by React.
-Ekta component and er attributes JSX code display hote 3 ti step follow kore.
 
+Ekta component and er attributes JSX code display hote 3 ti step follow kore.
+State change hole ekta re-render er request hoy.....
 1. Trigger: web page dekhanu ba serve korar request ( user interactivity te state change er porer obosta ) App protombar start korar jonno ekta initial render trigger hoy, tarpor zokhon component er state update hoy tokhon automatic render trigger hoy. Satte update er render gulu queue te joma thake.
 
 2. Rendering: Recursive process. React render the component ( find out the difference between two state changes and React call a component to figuare out what to display on screen )
