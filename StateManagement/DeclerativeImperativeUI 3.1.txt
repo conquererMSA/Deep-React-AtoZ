@@ -1,0 +1,1 @@
+React provides a declarative way to manipulate the UI/DOM.
