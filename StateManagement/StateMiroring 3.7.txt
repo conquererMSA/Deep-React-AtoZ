@@ -1,0 +1,2 @@
+Emon state za child component e establish hobe ebong zei satate er value parent component theke control kora hobe se state gulu dye child component e state declare (Morror) kora ucit na.
+Initially parent theke props set hoye zay, kintu porobortite user interaction e state change holeo ta child compnent e pass/re-render hoyna.
