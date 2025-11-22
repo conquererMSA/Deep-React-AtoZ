@@ -1,7 +1,7 @@
 React provides a declarative way to manipulate the UI/DOM.
 Imperative programming e automatic and user er protiti interaction e UI te ki ki manipulate/change hobe ta exactly describe korte hoy. Imperative programming e amra shudhumatro browser DOM and CSS niye kaj kore. Amra sorasori browser DOM manipulate kore.
 
-Kintu React e amra kokhonoi sorasori kuno component/UI update korina. Amra shudu logic and state declare kori.
+Kintu React e amra kokhonoi sorasori kuno component/UI update korina. Amra shudu logic and state declare kori. React e bivinno event/input er response e state update korte hoy.
 React hocce declarative programming zekhane amra shudhu matro user er interaction onuzye JS diye state change kori, and sei state change onuzaye React UI manipulate kore. React e Actual DOM er sathe Virtual DOM niyeo kaj kora hoy.
 
 Ekta page ke React component e convert korar jonno nicer 5 ti dhap follow korte hobe:
