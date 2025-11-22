@@ -1,0 +1,2 @@
+Duita sibling ba children component ke kuno ekta nirdhisto state diye controll korar jonno Lifting State Up theory use kora hoy.
+Lifting State Up e parent component e state declare kore child component e prop hisabe pathanu hoy, ete child component parent component er control e cole ase. Etake parent control compnent bola hoy.
