@@ -1,0 +1,23 @@
+Reducer let us consolidate application's all state update logic in a single place.
+Reducer component er sathe tide thake na, borong component er baire manage kora hoy.
+Reducer performance e efect kore na, eta shudhumatro ekta pattern za code readibility and code debugging baray.
+Reducer ekta pure function za same input er jonno same output dey. Reucer er moddhye side effect, time scheduling, and request send kora ucit na.
+export default const taskReducer=(tasks, action)=>{}
+ekhane taskReducer duita param tasks and action recieve kore. ekhane action hocce ekta object and tasks hocce sei reducer er initial data. User er proti interaction e kichu essential data dispatch hoy za reducer er action er moddhye ase. Action er moddhye thake type and tasks poribortoner jonno proyujonio data. Action er type onuzaye reducer state tasks mutate kora hoy.
+**useReducer hook er maddhyome create kora taskReducer use korte hobe. useReducer hook create kora reducer and initial data argument hisabe pathate hoy. useReducer ekta tuple return kore za moddhye mutate kora data and dispatch pawya zay.
+const [tasks, dispatch]=useReducer(initialData, tasksReducer)
+dispatch component level e user event handle korar jonno use kora hoy. Dispatch ekta normal/pure JS function object za rendering e reducer er kache proujonio data zemon type and others send kore.
+dispatch({
+    type:"added"
+    task:task,
+    etc
+})
+ei dispatch event handle e state update korte use kora hoy.
+zemon: const handleAddTask=(text)=>{
+    dispatch({
+    type:"added"
+    task:task,
+    etc
+})
+}
+User er interaction e event handling er moaddhyome action dispatch hole reducer logic execute hoy ebong tar corrosponding e amara tasks er moddhyoe updated data pai. orthat action dispatch e reducer data/state update hoy.
