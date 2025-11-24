@@ -1,0 +1,18 @@
+JSON file er bodole JS file use korle data somporkito sob kaj sei file er kora zay.
+
+How t create a valid url of a local file in Vite project?
+Vite project e local file er valid URL create korar jonno URL constructor function ke call korte hoy. URL constructor duita param recieve kore zotha: file path and import.meta.url . then constructor URL er ref ke call korte hoy.
+const getImageURL=(name)=>{
+    return new URL('../assets/image/name, import.meta.url).ref
+}
+ekhane getImageURL function local file er ekta valid url return korebe, sei url er maddhome sei faile ke production e access kora zabe.
+
+Rating component e ekta Movie er Rating manage kora hocce.
+import Star from 'react-icons'
+export default const Rating=({value})=>{
+    const stars=Array(value).fill(Star:reactIcon theke asbe).
+    return <>
+    {stars.map(star=><img value={star} h=17 />)}
+    </>
+}
+Ekhane value number onuzayee Star icon er array stars create kora hoyeche. stars array te ekhon shudhumatro value songkhok Star icon ache. Tarpor stars array ke map kore deya hoyeche.
