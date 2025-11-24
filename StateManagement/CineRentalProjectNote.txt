@@ -16,3 +16,36 @@ export default const Rating=({value})=>{
     </>
 }
 Ekhane value number onuzayee Star icon er array stars create kora hoyeche. stars array te ekhon shudhumatro value songkhok Star icon ache. Tarpor stars array ke map kore deya hoyeche.
+**Theme configuration by React ContextAPI** below:
+tailwind.config.js e darkMode name ekta variable create korte hobe.
+darkMode:"class" mane hocce darkMode manually CSS class diye implement kora hobe.
+index.css e tailwind directives gulur sathe class .dark {} e kaj korte hobe.
+.dark {
+    @apply bg-[#blackCode] text-white
+}
+Header component e ThemeContext use kore current mode extract korte hobe and mode setter function setDarkMode o niye aste hobe. Trpor mode JSX element/Icon mode onuzaye setDarkMode setter function diye toggle korte hobe.
+ThemeContext name ekta context create kora hobe ebong themecontext er provider e value hisabe darkMode and setDarkMode state provide kora hobe.
+export default const App=()=>{
+    const [darkMode, setDarkMode]=useState(true);
+    return(
+        <>
+        <ThemeContext value={{darkMode, setDarkMode}}
+          ...rest components
+          </ThemeContext>
+        </>
+
+    )
+}
+DarkMode apply korar jonn application er component hierrerchy te top level component er first div e CSS className e conditionally darkMode implement korte hobe.
+CineRental application er Page component er first div e darkMode implement kora hoyeche.
+useContext theke current ThemeContext er current mode pawya zay
+export default const Page=()=>{
+    const {darkMode}=useContext(ThemeContext)
+    return (
+        <div className={darkMode?"dark":""}>
+        ekhane "dark" hocce CSS class 
+        ...rest components
+        </div>
+    )
+}
+
