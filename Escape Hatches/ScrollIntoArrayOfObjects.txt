@@ -1,5 +1,7 @@
 import { useRef, useState } from "react";
 
+In this example, itemsRef doesn’t hold a single DOM node. Instead, it holds a Map from item ID to a DOM node. (Refs can hold any values!) The ref callback on every list item takes care to update the Map:
+
 export default function CatFriends() {
   const itemsRef = useRef(null); //ekhane useRef ekta storage hisabe use kora hobe.
   const [catList, setCatList] = useState(setupCatList()); //array of object of cat.

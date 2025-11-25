@@ -1,3 +1,4 @@
+React commit er somoy dom node and ref set kore. Commit= Before updating the DOM + After updating the DOM. dom protombar update howar agee React ref.current=null and dom update howar pore ref.current ke tar corrosponding DOM node set kore.
 **Ref rendering trigger korena, zodio ref user interaction e change hoy. re-render na howarkarone amra ref er updated value dekhte paina. Ref rendering er somy access kora zayna. Ref rendering er por browser DOM e commit sheshe JSX element access korte pare. Ref rendering leads unreliable code.**
 
 Kuno componnent er kuno DOM element/JSX er reference dhora ba component er emon kuno data zeta user er event e change holeo render trigger korbe na, emon sob case e ref use kora hoy. useRef hook e initial reference value argument hisabe dile amra useRef er return e plain JS object ref pai. ref object er current property er moddhye amra ref e point value/reference peye zai.
