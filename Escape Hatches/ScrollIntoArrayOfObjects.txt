@@ -4,7 +4,8 @@ export default function CatFriends() {
   const itemsRef = useRef(null); //ekhane useRef ekta storage hisabe use kora hobe.
   const [catList, setCatList] = useState(setupCatList()); //array of object of cat.
 
-
+//scrollToCat function er param e catList array er kuno ekti cat er info asbe. Zehetu map e amra array er prottyekti cat/object and er corrosponding DOM node/JSX element kay-value pair hisabe ache tai getMap function call kore puru map er protiti entry access korte hobe. map.get(cat) call korle amra sei cat er corrosponding DOM node pai. ekhon DOM node e amra zekuno DOM operation calate pari.
+//Ekahne itemsRef.current orthat map use kora hoyeche.
   function scrollToCat(cat) {
     const map = getMap();
     const node = map.get(cat);
@@ -28,6 +29,7 @@ export default function CatFriends() {
     <>
       <nav>
         <button onClick={() => scrollToCat(catList[0])}>Neo</button>
+        //itemsRef.current e ze Map DS assign kora hoyeche tar protita entry er key hocce cat er puru ekta object. Tai ekhan theke scrollToCat function er param hisabe catList array te thaka puru ekti cat object pathanu hoyeche.
         <button onClick={() => scrollToCat(catList[5])}>Millie</button>
         <button onClick={() => scrollToCat(catList[8])}>Bella</button>
       </nav>
@@ -39,6 +41,7 @@ export default function CatFriends() {
               //puru comonent e ekhanei protombar getMap call kora hoyeche and getMap call kore itemsRef.current e map set kora hoyeche.
               ref={(node) => { //callback ref and node e corrosponding li pawya zabe.
               //ekhane prottyekti cat/object rende howyar sathe sathei getMap call hoy and protiti cat key and cat er corrosponding DOM node/JSX element <li> value key-value pair kore map e set hoy.
+              //Ekhane map e key-value pair set kora hoyeche.
                 const map = getMap(); 
                 map.set(cat, nod
                         e);
