@@ -1,0 +1,82 @@
+import { useRef, useState } from "react";
+
+export default function CatFriends() {
+  const itemsRef = useRef(null); //ekhane useRef ekta storage hisabe use kora hobe.
+  const [catList, setCatList] = useState(setupCatList()); //array of object of cat.
+
+
+  function scrollToCat(cat) {
+    const map = getMap();
+    const node = map.get(cat);
+    node.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "center",
+    });
+  }
+
+//ekhane component protombar render howar sathe sathe itemsRef.current ke ekti notun Map DS diye assign/mutate kora hoyeche. itemsRef.current zodi null na hoy tobe puro map tai return korbe.
+  function getMap() {
+    if (!itemsRef.current) {
+      // Initialize the Map on first usage.
+      itemsRef.current = new Map();
+    }
+    return itemsRef.current;
+  }
+
+  return (
+    <>
+      <nav>
+        <button onClick={() => scrollToCat(catList[0])}>Neo</button>
+        <button onClick={() => scrollToCat(catList[5])}>Millie</button>
+        <button onClick={() => scrollToCat(catList[8])}>Bella</button>
+      </nav>
+      <div>
+        <ul>
+          {catList.map((cat) => (
+            <li
+              key={cat.id}
+              //puru comonent e ekhanei protombar getMap call kora hoyeche and getMap call kore itemsRef.current e map set kora hoyeche.
+              ref={(node) => { //callback ref and node e corrosponding li pawya zabe.
+              //ekhane prottyekti cat/object rende howyar sathe sathei getMap call hoy and protiti cat key and cat er corrosponding DOM node/JSX element <li> value key-value pair kore map e set hoy.
+                const map = getMap(); 
+                map.set(cat, nod
+                        e);
+
+                //component unmount/remove hole itemsRef.current er moddhye ze map set hoyechilo sei map er sob gulu entry ekti ekti kore delete hoye zay and finally itemsRef.current e null set hoy.
+                component er refrence storage/data clear kore dite hoy zate  component unmount/remove hole sei data leackage ba memory te roye na zay.
+                return () => {
+                  map.delete(cat);
+                };
+              }}
+            >
+              <img src={cat.imageUrl} />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
+  );
+}
+
+//ekhane kichu data diye ekta object create kora hocce, then ekta array of object return kora hocce.
+function setupCatList() {
+  const catCount = 10;
+  const catList = new Array(catCount)
+  for (let i = 0; i < catCount; i++) {
+    let imageUrl = '';
+    if (i < 5) {
+      imageUrl = "https://placecats.com/neo/320/240";
+    } else if (i < 8) {
+      imageUrl = "https://placecats.com/millie/320/240";
+    } else {
+      imageUrl = "https://placecats.com/bella/320/240";
+    }
+    catList[i] = {
+      id: i,
+      imageUrl,
+    };
+  }
+  return catList;
+}
+
