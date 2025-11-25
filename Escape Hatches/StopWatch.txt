@@ -4,6 +4,8 @@ export default function Stopwatch() {
   const [startTime, setStartTime] = useState(null);
   const [now, setNow] = useState(null);
   const intervalRef = useRef(null);
+ekhane user stsrt click korar sathe sathe startTime track kora hoyeche. display te calculated time dekhanur jonno current time proti 10 ms ontor now state e set korte hobe.
+10 ms ontor now state set korar jonno setInterval function e now state set korte hobe.
 
   function handleStart() {
     setStartTime(Date.now());
@@ -14,15 +16,19 @@ export default function Stopwatch() {
       setNow(Date.now());
     }, 10);
   }
+user zokhon start button e clik korbe tokhon startTime and now state set hobe and setInterval er vitor 10ms porpor now state set hobe. setInterval function er id ref valuer moddhye rekhe dite hobe. zodio proti 10ms ontor now state change hobe and component re-render hobe tarpor o setInterval er ID hariye zabe na, karon setInterval er id ref e store kora hoyeche and remember re-render e ref tar value dhore rakhe and ref change holeo re-render trigger kore na.
 
   function handleStop() {
     clearInterval(intervalRef.current);
   }
+handleStop function e shudhumatro setInterval er reference clear kore deya hoyeche.
+zokhon-e user stop button e click korbe handleStop function execute hoye setInterval ke clear kore dibe. setInterval clear hoye gele component er now state ar update hobe na and now state er jonno re-render o trigger hobe na. Shudhumatro setInterval er vitor now state change/update hocce and re-render trigger koreche.
 
   let secondsPassed = 0;
   if (startTime != null && now != null) {
     secondsPassed = (now - startTime) / 1000;
   }
+now state theke startTime state er value minus kore 1000 diye divided kore passedSecnd variable milisecond theke second e convert kora hoyeche.
 
   return (
     <>
